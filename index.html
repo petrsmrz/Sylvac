@@ -58,7 +58,7 @@
               log("Got service");
               console.log(service);
 
-              const notif_characteristics = await service.getCharacteristic("c1b25013-caaf-6d0e-4c33-7dae30052840");
+              const notif_characteristics = await service.getCharacteristic("0000f001-0000-1000-8000-00805f9b34fb");
               log("Notification chararacteristics " + JSON.stringify( notif_characteristics ) );
 
               await notif_characteristics.startNotifications();
